@@ -153,7 +153,7 @@ Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComman
                 trmsg = ceviri.text
             }
         }
-        var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Phaticusthiccy', 'WhatsAsena', unique_ident)
+        var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Roger', 'WhatsAsena', unique_ident)
         var fins = ''                           
         if (conf.LANG !== 'EN') {
             ceviri = await translatte(payload_client.result, {from: 'auto', to: conf.LANG});
@@ -197,7 +197,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                 trmsg = ceviri.text
                             }
                         }
-                        var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Phaticusthiccy', 'WhatsAsena', unique_ident)
+                        var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Roger', 'WhatsAsena', unique_ident)
                         var fins = ''                           
                         if (conf.LANG !== 'EN') {
                             ceviri = await translatte(payload_client.result, {from: 'auto', to: conf.LANG});
@@ -236,7 +236,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                             trmsg = ceviri.text
                         }
                     }
-                    var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Phaticusthiccy', 'WhatsAsena', unique_ident)
+                    var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Roger', 'WhatsAsena', unique_ident)
                     var fins = ''                           
                     if (conf.LANG !== 'EN') {
                         ceviri = await translatte(payload_client.result, {from: 'auto', to: conf.LANG});
@@ -273,7 +273,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         trmsg = ceviri.text
                     }
                 }
-                var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Phaticusthiccy', 'WhatsAsena', unique_ident)
+                var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(trmsg), 'Eva', 'Roger', 'WhatsAsena', unique_ident)
                 var fins = ''                           
                 if (conf.LANG !== 'EN') {
                     ceviri = await translatte(payload_client.result, {from: 'auto', to: conf.LANG});
@@ -315,7 +315,7 @@ Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc, fromMe: wk }, (async (mes
                 let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'       
                 var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
                 if (ainame !== 'Asena') return;
-                var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(ssc), 'Eva', 'Phaticusthiccy', 'WhatsAsena', unique_ident)
+                var payload_client = await WhatsAsenaStack.get_eva_ai(encodeURIComponent(ssc), 'Eva', 'Roger', 'WhatsAsena', unique_ident)
                 var fins = ''                           
                 if (conf.LANG !== 'EN') {
                     ceviri = await translatte(payload_client.result, {from: 'auto', to: conf.LANG});
@@ -356,7 +356,7 @@ if (conf.LANG == 'TR') {
 if (conf.LANG == 'EN') {
     fulleva_dsc = 'Activates full functional Eva features. Turn your account into a ai chatbot!'
     already_on = 'Eva artificial intelligence is already fully functional.'
-    already_off = 'Eva artificial intelligence is currently running semi-functional.'
+    already_off = 'Eva artificial intelligence is currently running semi-functional.Roger-san'
     succ_on = 'Eva Opened Fully Functionally! Please wait a bit! ✅'
     succ_off = 'Eva Set to Semi-Functional! Please wait a bit! ☑️'
     wr_cmd = 'Please just use the *off* or *on* command.'
